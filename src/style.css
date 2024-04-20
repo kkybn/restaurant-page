@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+}
+
+body {
+    height: 100vh;
+    background: #fcdfff;
+    font-family: 'IBM Plex Mono';
+    display: flex;
+    flex-direction: column;
+}
+
+.body-menu {
+    background: #daf5f0;
+}
+
+.body-contact {
+    background: #d9f1d2;
+}
+
+button {
+    font-family: 'IBM Plex Mono';    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    min-height: 120px;
+    margin: 0 auto;
+}
+
+.shop-name {
+    font-weight: 500;
+    background: #fff59f;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    border: 2px solid black;
+}
+
+.nav-button {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom: 2px solid black;
+}
+
+.content {
+    padding-top: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+}
+
+footer {
+    padding: 20px 20px;
+}
+
+footer a {
+    color: black;
+}
+
+/*/////////Menu//////////*/
+
+.content-menu {
+    width: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px 45px;
+}
+
+.greeting {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 600px;
+    line-height: 1.5;
+}
+
+.hero {
+    width: 270px;
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 300px;
+    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+    background: url(./images/shop.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.order {
+    border: 2px solid black;
+    border-radius: 9px;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    background: #90ee90;
+    padding: 20px 35px;
+    font-size: 20px;
+}
+
+.order:hover {
+    filter: brightness(85%);
+}
+
+.order:active {
+    filter: brightness(100%);
+}
+
+.item {
+    border: 1px solid black;
+    height: 280px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+.item:nth-child(1) .photo {
+    background: url(./images/curryrice.jpg);
+    background-position: 50% 50%;
+    background-size: 320px;
+}
+.item:nth-child(2) .photo {
+    background: url(./images/katsudon.jpg);
+    background-position: 65% 50%;
+    background-size: 345px;
+}
+.item:nth-child(3) .photo {
+    background: url(./images/miso.webp);
+    background-position: 50% 50%;
+    background-size: 280px;
+}
+.item:nth-child(4) .photo {
+    background: url(./images/okonomiyaki.jpg);
+    background-position: 60% 60%;
+    background-size: 300px;
+}
+.item:nth-child(5) .photo {
+    background: url(./images/ramen2.jpg);
+    background-position: 50% 50%;
+    background-size: 320px;
+}
+.item:nth-child(6) .photo {
+    background: url(./images/sushi.jpg);
+    background-position: 50% 50%;
+    background-size: 220px;
+}
+.item:nth-child(7) .photo {
+    background: url(./images/takoyaki.jpg);
+    background-position: 50% 50%;
+    background-size: 230px;
+}
+.item:nth-child(8) .photo {
+    background: url(./images/tempura.jpg);
+    background-position: 50% 50%;
+    background-size: 220px;
+}
+
+.photo {
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 9px;
+    border-top: 1px solid black;
+    font-size: 15px;
+    font-weight: 500;
+    background: #f2f2f2;
+}
+
+.add {
+    background: #c4a1ff;
+    border: none;
+    border-top: 1px solid black;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.add:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.add:active {
+    filter: brightness(100%);
+}
+
+/*////////////////Card//////////////*/
+
+.card {
+    margin-top: 60px;
+    width: 860px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 9px;
+    background: #ffc0cb;
+    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.map {
+    width: 750px;
+    height: 365px;
+    background: url(./images/map.png);
+    background-position: 50% 50%;
+    background-size: 750px;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.number {
+    padding-left: 11px;
+    font-weight: 500;
+}
+
+.address {
+    padding-left: 11px;
+    width: 450px;
+    font-weight: 500;
+}
